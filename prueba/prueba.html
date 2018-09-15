@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prueba</title>
+  </head>
+  <body>
+    <!-- Formulario - Inicio. -->
+    <input type="number" min="0" placeholder="Numero de Piezas" id="Piezas" autofocus required>
+    <input type="number" min="0" placeholder="Largo" id="Largo" required>
+    <input type="number" min="0" placeholder="Ancho" id="Ancho" required>
+    <input type="number" min="0" placeholder="Alto" id="Alto" required>
+    <input type="number" min="0" placeholder="Peso" id="Peso" required><br>
+    <input type="radio" name="radios" id="radio1" checked>Servicio Aéreo<br>
+    <input type="radio" name="radios" id="radio2">Servicio Marítimo<br>
+    <input type="button" name="boton" value="Calcular" onclick="Costo();"><br>
+    <div id="resultado">Resultado</div>
+    <!-- Formulario - Fin. -->
+    <script type="text/javascript">
+    function Costo()
+    {
+      var Piezas=parseInt(document.getElementById("Piezas").value);
+      var Largo=parseInt(document.getElementById("Largo").value);
+      var Ancho=parseInt(document.getElementById("Ancho").value);
+      var Alto=parseInt(document.getElementById("Alto").value);
+      var Peso=parseInt(document.getElementById("Peso").value);
+      var Pesototal;
+      var Pesoentrevol;
+      var Costototal;
+
+      if((document.getElementById("Piezas").value=="")||(document.getElementById("Largo").value=="")||(document.getElementById("Ancho").value=="")||(document.getElementById("Alto").value=="")||(document.getElementById("Peso").value==""))
+      {
+        alert("Por favor ingrese los datos de forma correcta.");
+      }
+      else
+    {
+        if (document.getElementById('radio1').checked) //Servicio Aéreo.
+        {
+          Pesototal=Piezas*Peso;
+          Pesoentrevol=((Largo*Ancho*Alto)/166)*Piezas;
+          Costototal=Pesoentrevol*2.80;
+          document.getElementById('resultado').innerHTML=("Costo de su envío $" + Costototal.toFixed(2));
+        }
+        else //Servicio Marítimo.
+        {
+          PieCubico=(Largo/12)*(Ancho/12)*(Alto/12)*Piezas;
+          Costototal=PieCubico*13.00;
+          document.getElementById('resultado').innerHTML=("Costo de su envío $" + Costototal.toFixed(2));
+        }
+      }
+    }
+    </script>
+  </body>
+</html>

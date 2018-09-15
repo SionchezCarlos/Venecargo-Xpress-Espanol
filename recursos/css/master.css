@@ -1,0 +1,36 @@
+/*////////// Venecargo Xpress 2017 Todos los derechos reservados. Desarrollado por Bits&Pixels. //////////*/
+/*//////////////////////////////////////////////////////////////////////
+[Master Stylesheet]
+Project:	24/7 Express Logistics Services
+Version:	1.0
+Assigned to:	WebNik
+Primary use:	24/7 Express Logistics Services
+///////////////////////////////////////////////////////////////////////*/
+
+/* Fonts. */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:700,600,400,300,300italic,700|Lato:400,300,300italic,700,900|Merriweather:400italic);
+@import url('../fonts/flaticon/flaticon.css');
+@import url('../fonts/font-awesome-4.5.0/css/font-awesome.min.css');
+
+/* Plugin CSS. */
+@import url('../plugins/bootstrap/css/bootstrap.css');                /* Bootstrap. */
+@import url('../plugins/yamm/yamm.css');                              /* Responsive menu. */
+@import url('../plugins/slider-pro/dist/css/slider-pro.css');         /* Main slider. */
+@import url('../plugins/owl-carousel/owl.carousel.css');              /* Other sliders. */
+@import url('../plugins/owl-carousel/owl.transitions.css');           /* Other sliders. */
+@import url('../plugins/owl-carousel/owl.theme.css');                 /* Other sliders. */
+@import url('../plugins/flexslider/flexslider.css');                  /* Sliders. */
+@import url('../plugins/prettyphoto/css/prettyPhoto.css');            /* Modal. */
+@import url('../plugins/bootstrap-select/dist/css/bootstrap-select.css');   /* Select customization-2. */
+@import url('../plugins/animate/animate.css');                        /* Animations. */
+@import url('../plugins/parallax.css');                               /* Parallax. */
+@import url('../plugins/validation/validation-2.2.min.css');          /* Validation. */
+
+/* Main CSS. */
+@import url('preloader.css');
+@import url('theme.css');
+@import url('sections.css');
+@import url('sidebar.css');
+@import url('blog.css');
+@import url('color.css');
+@import url('responsive.css');
