@@ -1,4 +1,5 @@
-# {%= name %}
+<!-- # {%= name %} -->
+# {{ name }}
 
 > {%= description %}
 
